@@ -1,0 +1,37 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27703.2042
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RodriBus.Utils", "RodriBus.Utils\RodriBus.Utils.csproj", "{5A550745-4D15-4463-969C-4BB537620E76}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RodriBus.Utils.Tests", "RodriBus.Utils.Tests\RodriBus.Utils.Tests.csproj", "{3BEB9930-8710-4617-8098-0647EE6519DB}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{947553CB-3263-4940-B0DB-1F2EED11F593}"
+	ProjectSection(SolutionItems) = preProject
+		..\build.cake = ..\build.cake
+		..\cake.config = ..\cake.config
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{5A550745-4D15-4463-969C-4BB537620E76}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5A550745-4D15-4463-969C-4BB537620E76}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5A550745-4D15-4463-969C-4BB537620E76}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5A550745-4D15-4463-969C-4BB537620E76}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3BEB9930-8710-4617-8098-0647EE6519DB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3BEB9930-8710-4617-8098-0647EE6519DB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3BEB9930-8710-4617-8098-0647EE6519DB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3BEB9930-8710-4617-8098-0647EE6519DB}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {0199ED89-61BF-48AD-AA7D-7C775D625706}
+	EndGlobalSection
+EndGlobal
