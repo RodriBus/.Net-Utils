@@ -70,5 +70,11 @@ namespace RodriBus.Utils.Regional
             var controlDigitStr = groups[1].Value.ToLower().Replace("x", "0").Replace("y", "1").Replace("z", "2");
             return groups.Count == 4 && _validateNif(controlDigitStr + groups[2] + groups[3]);
         }
+
+        public static bool IsValidPhone(string phone)
+        {
+            var phoneRegex = new Regex(@"^(\+34|0034|34)?[\s|\-|\.]?[6|7|9][\s|\-|\.]?([0-9][\s|\-|\.]?){8}$");
+            return phoneRegex.IsMatch(phone);
+        }
     }
 }
