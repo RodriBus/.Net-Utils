@@ -28,5 +28,27 @@ namespace RodriBus.Utils.Tests
 
             actual.Should().Be(expected);
         }
+
+        [Fact]
+        public static void ShouldCalculateAgeFromBirthDay()
+        {
+            var birthday = new DateTime(1990, 05, 01);
+            var reference = new DateTime(2000, 06, 01);
+            var expected = 10;
+            var actual = TimeUtils.GetAge(reference, birthday);
+
+            actual.Should().Be(expected);
+        }
+
+        [Fact]
+        public static void ShouldCalculateExactAgeFromBirthDay()
+        {
+            var birthday = new DateTime(1990, 05, 01);
+            var reference = new DateTime(2005, 05, 01);
+            var expected = 15;
+            var actual = TimeUtils.GetAge(reference, birthday);
+
+            actual.Should().Be(expected);
+        }
     }
 }

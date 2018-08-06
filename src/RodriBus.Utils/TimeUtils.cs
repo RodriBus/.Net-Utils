@@ -30,5 +30,24 @@ namespace RodriBus.Utils
             dtDateTime = dtDateTime.AddSeconds(unixTimeStamp);
             return dtDateTime;
         }
+
+        /// <summary>
+        /// Calculates the age of a given birthday related to a reference date.
+        /// If the reference is lower than the birthday the age returned resembles a negative age.
+        /// </summary>
+        /// <remarks>
+        /// The calculation does not count days but years, as in a legal way of considering peoples ages.
+        /// With this in mind, at the exact day of your birthday at 0h 0m 0s you will get one year older.
+        /// </remarks>
+        /// <param name="reference">The reference date</param>
+        /// <param name="birthday">The birthday date</param>
+        /// <returns></returns>
+        public static int GetAge(DateTime reference, DateTime birthday)
+        {
+            var age = reference.Year - birthday.Year;
+            if (reference < birthday.AddYears(age)) age--;
+
+            return age;
+        }
     }
 }
