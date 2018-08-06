@@ -11,3 +11,5 @@ build_script:
 - ps: .\build.ps1
 test: off #tests handled by cake script
 deploy: off
+artifacts:
+  - path: 'artifacts/*.nupkg'
