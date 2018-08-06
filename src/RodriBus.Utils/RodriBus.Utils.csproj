@@ -12,8 +12,8 @@
     <RepositoryUrl>https://github.com/RodriBus/.Net-Utils</RepositoryUrl>
     <PackageProjectUrl>https://github.com/RodriBus/.Net-Utils</PackageProjectUrl>
     <PackageRequireLicenseAcceptance>true</PackageRequireLicenseAcceptance>
-    <PackageLicenseUrl>https://raw.githubusercontent.com/RodriBus/.Net-Utils/master/RodriBus.Utils/LICENSE.md</PackageLicenseUrl>
-    <PackageIconUrl>https://raw.githubusercontent.com/RodriBus/.Net-Utils/master/RodriBus.Utils/package-icon.png</PackageIconUrl>
+    <PackageLicenseUrl>https://raw.githubusercontent.com/RodriBus/.Net-Utils/master/LICENSE.md</PackageLicenseUrl>
+    <PackageIconUrl>https://raw.githubusercontent.com/RodriBus/.Net-Utils/master/package-icon.png</PackageIconUrl>
     <PackageTags>rodribus;utils</PackageTags>
     <GeneratePackageOnBuild>false</GeneratePackageOnBuild>
   </PropertyGroup>
