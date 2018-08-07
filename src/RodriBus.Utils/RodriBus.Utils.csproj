@@ -5,6 +5,7 @@
     <TargetFramework>netstandard2.0</TargetFramework>
     <!-- https://docs.microsoft.com/es-es/dotnet/core/versions/ -->
     <Version>0.0.0.1</Version>
+    <Title>RodriBus.Utils</Title>
     <Description>RodriBus's utils library for .Net projects</Description>
     <Authors>Diego Rodríguez Suárez-Bustillo</Authors>
     <Product>RodriBus.Utils</Product>
