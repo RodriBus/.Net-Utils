@@ -71,6 +71,11 @@ namespace RodriBus.Utils.Regional
             return groups.Count == 4 && _validateNif(controlDigitStr + groups[2] + groups[3]);
         }
 
+        /// <summary>
+        /// Validates if a phone number is valid according to spanish rules.
+        /// </summary>
+        /// <param name="phone">The phone number</param>
+        /// <returns></returns>
         public static bool IsValidPhone(string phone)
         {
             var phoneRegex = new Regex(@"^(\+34|0034|34)?[\s|\-|\.]?[6|7|9][\s|\-|\.]?([0-9][\s|\-|\.]?){8}$");

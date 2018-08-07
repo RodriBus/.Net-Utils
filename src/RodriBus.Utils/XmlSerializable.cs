@@ -7,6 +7,10 @@ using System.Xml.Serialization;
 
 namespace RodriBus.Utils
 {
+    /// <summary>
+    /// Base class for XML serializable child classes.
+    /// </summary>
+    /// <typeparam name="T"></typeparam>
     public abstract class XmlSerializable<T>
     {
         /// <summary>
@@ -85,10 +89,10 @@ namespace RodriBus.Utils
         }
 
         /// <summary>
-        /// Deserializes a XML string into an instance of a <see cref="T"/> class.
+        /// Deserializes a XML string into an instance of a specified class.
         /// </summary>
         /// <param name="xmlString">The XML string</param>
-        /// <returns>The <see cref="T"/> class instance</returns>
+        /// <returns>The specified class instance</returns>
         public static T Deserialize(string xmlString)
         {
             var doc = new XmlDocument();
@@ -97,10 +101,10 @@ namespace RodriBus.Utils
         }
 
         /// <summary>
-        /// Deserializes a <see cref="XmlDocument"/> into an instance of a <see cref="T"/> class.
+        /// Deserializes a <see cref="XmlDocument"/> into an instance of a specified class.
         /// </summary>
         /// <param name="xml">The XML document</param>
-        /// <returns>The <see cref="T"/> class instance</returns>
+        /// <returns>The specified class instance</returns>
         public static T Deserialize(XmlDocument xml)
         {
             var serializer = new XmlSerializer(typeof(T));

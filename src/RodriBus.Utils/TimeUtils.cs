@@ -4,6 +4,9 @@ using System.Text;
 
 namespace RodriBus.Utils
 {
+    /// <summary>
+    /// Contains utils related to common time operations.
+    /// </summary>
     public static class TimeUtils
     {
         /// <summary>
